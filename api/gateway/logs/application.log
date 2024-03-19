@@ -1,0 +1,341 @@
+2023-08-02 11:51:22 [WARN] c.t.f.BusinessGuiceModule - Running java version:11.0.19
+2023-08-02 11:51:26 [WARN] c.t.f.r.CloudStorageHelper - Did not find (EFS) file system root - config entries 'resource.cloudStorage.efs.rootDir' missing. Will use DB binary storage.
+2023-08-02 11:51:28 [WARN] c.t.f.r.VirusChecker - Virus scanning is NOT enabled. BUT 'clamAv.url' is NOT REACHABLE. Will NOT scan. Url: https://antivirus.twago.net/scan
+2023-08-02 11:51:29 [WARN] c.t.f.q.SqsHelper - Using InstanceProfileCredentialsProvider.
+2023-08-02 11:51:29 [WARN] c.t.f.q.SqsHelper - Successfully created AWS-SQS and AWS-S3 connection - using config entries 'aws.sqs'.
+2023-08-02 11:51:30 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 11:51:31 [INFO] c.t.f.r.CloudStorageHelper$CryptoUtils - Created new SecureRandom.
+2023-08-02 11:51:31 [INFO] c.t.f.r.CloudStorageHelper - Initialized AES.
+2023-08-02 11:51:31 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 11:51:31 [WARN] g.GatewayGuiceModule - Creating PlayCookieSessionStore, using secret '111...'
+2023-08-02 11:51:31 [WARN] o.p.c.c.d.AnonymousClient - Be careful when using the 'AnonymousClient': an 'AnonymousProfile' is returned and the access is granted for the request.
+2023-08-02 11:51:31 [WARN] c.t.f.s.m.MatchingService - MatchingUtils is enabled: false BUT 'matching.query.api.url' is not a valid url. Will NOT use it. Url:  BUT 'matching.query.api.url' is NOT REACHABLE. Will NOT use it. Url: 
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - GatewayActor starting up
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,admin,dc-default' - 'MemberUp(Member(akka://application@api-admin:9104, Up))'
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'gateway,dc-default' - 'MemberUp(Member(akka://application@api-gateway:9102, Up))'
+2023-08-02 11:51:31 [WARN] c.t.fms.user.User - Embedding sync is NOT enabled. BUT 'matching.embedding.url' is not a valid url. Will NOT sync. Url:  BUT 'matching.embedding.url' is NOT REACHABLE. Will NOT sync. Url: 
+2023-08-02 11:51:31 [ERROR] g.a.a.MktPlaceUserImportActor - Unable to read CSV file with Category-Pool-Skills Mapping.. 
+java.nio.file.NoSuchFileException: /marketplaceUserImport/skillsPoolMapping.csv
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newInputStream(Unknown Source)
+	at gateway.akka.actors.MktPlaceUserImportActor.getSkillMappingFromIS(MktPlaceUserImportActor.java:524)
+	at gateway.akka.actors.MktPlaceUserImportActor.createReceive(MktPlaceUserImportActor.java:133)
+	at akka.actor.AbstractActor.receive(AbstractActor.scala:309)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:622)
+	at akka.actor.ActorCell.create(ActorCell.scala:643)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:514)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:536)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2023-08-02 11:51:31 [WARN] g.a.a.ClusterBackendActor - ClusterBackendActor starting up
+2023-08-02 11:51:31 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,admin,dc-default' - 'MemberUp(Member(akka://application@api-admin:9104, Up))'
+2023-08-02 11:51:31 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 11:51:31 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'gateway,dc-default' - 'MemberUp(Member(akka://application@api-gateway:9102, Up))'
+2023-08-02 11:51:31 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 11:51:31 [INFO] c.t.f.LiquibaseStartupHook - Running Liquibase ..
+2023-08-02 11:51:34 [INFO] c.t.f.LiquibaseStartupHook - Liquibase updated.
+2023-08-02 11:51:34 [INFO] c.t.f.LiquibaseStartupHook - .. Liquibase done.
+2023-08-02 11:51:34 [INFO] g.l.q.j.JobApplicationResultOutboundQueueListener - JobApplicationResultOutboundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.j.BeelineJobInboundQueueListener - BeelineJobInboundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.j.BeelineJobApplicationInboundQueueListener - BeelineJobApplicationInboundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.j.BeelineJobApplicationOutboundQueueListener - BeelineJobApplicationOutboundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.i.BeelineInterviewInboundQueueListener - BeelineInterviewInboundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.o.BeelineOfferInboundQueueListener - BeelineOfferInboundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.i.BeelineInterviewOfferApprovalOutBoundQueueListener - BeelineInterviewOfferApprovalOutBoundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.i.BeelineInterviewOfferApprovalResultOutBoundQueueListener - BeelineInterviewOfferApprovalResultOutBoundQueueListener Invoked
+2023-08-02 11:51:34 [INFO] g.l.q.j.SalesforceJobApplicationOutboundQueueListener - SalesforceJobApplicationOutboundQueueListener Invoked
+2023-08-02 11:51:34 [WARN] c.t.f.q.SqsHelper - SQS disabled: check config 'events.vms.beeline.enabled'
+2023-08-02 11:51:34 [WARN] c.t.f.q.SqsHelper - SQS disabled: check config 'events.vms.salesforce.enabled'
+2023-08-02 11:51:35 [INFO] p.c.s.AkkaHttpServer - Listening for HTTP on /0.0.0.0:9000
+2023-08-02 11:51:41 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 11:51:49 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 11:51:49 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 11:51:49 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 11:51:49 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 11:51:54 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,msp,dc-default' - 'MemberUp(Member(akka://application@api-msp:9101, Up))'
+2023-08-02 11:51:54 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,msp,dc-default' - 'MemberUp(Member(akka://application@api-msp:9101, Up))'
+2023-08-02 11:51:54 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 11:51:54 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 11:51:59 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 11:52:01 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 11:52:04 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 11:52:19 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 11:52:24 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 11:53:59 [WARN] akka.cluster.Cluster - Cluster Node [akka://application@api-gateway:9102] - Marking node as UNREACHABLE [Member(akka://application@api-freelancer:9100, Up)].
+2023-08-02 11:54:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 11:54:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T11:53:00.049Z and publish date after now Wed Aug 02 11:54:00 UTC 2023
+2023-08-02 11:54:10 [WARN] a.r.a.Association - Outbound message stream to [akka://application@api-freelancer:9100] failed. Restarting it. akka.stream.StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 11:54:15 [WARN] a.s.Materializer - [outbound connection to [akka://application@api-freelancer:9100], message stream] Upstream failed, cause: StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 11:54:21 [WARN] a.r.a.Association - Association to [akka://application@api-freelancer:9100] with UID [-6824711786489535628] is irrecoverably failed. UID is now quarantined and all messages to this UID will be delivered to dead letters. Remote ActorSystem must be restarted to recover from this situation. Reason: Cluster member removed, previous status [Down]
+2023-08-02 11:57:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 11:57:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T11:56:00.002Z and publish date after now Wed Aug 02 11:57:00 UTC 2023
+2023-08-02 12:00:00 [WARN] g.a.a.l.GeoLookupActor - Unknown message dropped: GeoLookupActorMessage{message='geo-lookup-actor'}
+2023-08-02 12:00:00 [INFO] g.a.a.l.ClientFreelancerToPoolActor - <<Trying to add philips freelancers to Private Pool - Start>>
+2023-08-02 12:00:00 [INFO] g.h.TextKernelExtractionHandler - Got extraction message: 'null' with size: 0. Calling textkernel ..
+2023-08-02 12:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Job Parsing ~~~~
+2023-08-02 12:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Parsing the Job title & Description ~~~~
+2023-08-02 12:00:00 [WARN] g.h.TextKernelExtractionHandler - Cron Execution...
+2023-08-02 12:00:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:00:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T11:59:00.026Z and publish date after now Wed Aug 02 12:00:00 UTC 2023
+2023-08-02 12:00:00 [WARN] g.h.TextKernelExtractionHandler - No jobs found to parse by text kernel job processing.
+2023-08-02 12:00:00 [INFO] c.t.f.s.s.e.SearchService - reportUpdateChange on Pool id=26
+2023-08-02 12:00:00 [INFO] g.a.a.l.ClientFreelancerToPoolActor - << 0 philips freelancers added to Private Pool >>
+2023-08-02 12:00:00 [INFO] g.a.a.l.ClientFreelancerToPoolActor - <<Trying to add philips freelancers to Private Pool - End>>
+2023-08-02 12:03:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:03:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:02:00.002Z and publish date after now Wed Aug 02 12:03:00 UTC 2023
+2023-08-02 12:06:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:06:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:05:00.004Z and publish date after now Wed Aug 02 12:06:00 UTC 2023
+2023-08-02 12:09:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:09:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:08:00.001Z and publish date after now Wed Aug 02 12:09:00 UTC 2023
+2023-08-02 12:12:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:12:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:11:00.004Z and publish date after now Wed Aug 02 12:12:00 UTC 2023
+2023-08-02 12:15:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:15:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:14:00.002Z and publish date after now Wed Aug 02 12:15:00 UTC 2023
+2023-08-02 12:18:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:18:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:17:00.003Z and publish date after now Wed Aug 02 12:18:00 UTC 2023
+2023-08-02 12:21:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:21:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:20:00.002Z and publish date after now Wed Aug 02 12:21:00 UTC 2023
+2023-08-02 12:21:39 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:21:39 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:21:39 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:21:39 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:21:49 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:22:09 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:23:47 [WARN] akka.cluster.Cluster - Cluster Node [akka://application@api-gateway:9102] - Marking node as UNREACHABLE [Member(akka://application@api-freelancer:9100, Up)].
+2023-08-02 12:23:59 [WARN] a.r.a.Association - Outbound message stream to [akka://application@api-freelancer:9100] failed. Restarting it. akka.stream.StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 12:24:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:24:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:23:00.003Z and publish date after now Wed Aug 02 12:24:00 UTC 2023
+2023-08-02 12:24:08 [WARN] a.s.Materializer - [outbound connection to [akka://application@api-freelancer:9100], message stream] Upstream failed, cause: StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of akka.io.TcpOutgoingConnection$$anon$2: Connect timeout of Some(5000 milliseconds) expired
+2023-08-02 12:24:08 [WARN] a.r.a.Association - Association to [akka://application@api-freelancer:9100] with UID [-5156625462129854807] is irrecoverably failed. UID is now quarantined and all messages to this UID will be delivered to dead letters. Remote ActorSystem must be restarted to recover from this situation. Reason: Cluster member removed, previous status [Down]
+2023-08-02 12:27:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:27:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:26:00.002Z and publish date after now Wed Aug 02 12:27:00 UTC 2023
+2023-08-02 12:30:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:30:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:29:00.004Z and publish date after now Wed Aug 02 12:30:00 UTC 2023
+2023-08-02 12:33:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:33:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:32:00.001Z and publish date after now Wed Aug 02 12:33:00 UTC 2023
+2023-08-02 12:36:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:36:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:35:00.003Z and publish date after now Wed Aug 02 12:36:00 UTC 2023
+2023-08-02 12:38:42 [INFO] p.c.s.AkkaHttpServer - Stopping Akka HTTP server...
+2023-08-02 12:38:42 [INFO] p.c.s.AkkaHttpServer - Terminating server binding for /0.0.0.0:9000
+2023-08-02 12:38:42 [INFO] g.l.q.QueueListenerKickoff - AWS SQS: Message pulling stopped
+2023-08-02 12:38:42 [INFO] p.c.s.AkkaHttpServer - Running provided shutdown stop hooks
+2023-08-02 12:40:29 [WARN] c.t.f.BusinessGuiceModule - Running java version:11.0.19
+2023-08-02 12:40:32 [WARN] c.t.f.r.CloudStorageHelper - Did not find (EFS) file system root - config entries 'resource.cloudStorage.efs.rootDir' missing. Will use DB binary storage.
+2023-08-02 12:40:34 [WARN] c.t.f.r.VirusChecker - Virus scanning is NOT enabled. BUT 'clamAv.url' is NOT REACHABLE. Will NOT scan. Url: https://antivirus.twago.net/scan
+2023-08-02 12:40:34 [WARN] c.t.f.q.SqsHelper - Using InstanceProfileCredentialsProvider.
+2023-08-02 12:40:35 [WARN] c.t.f.q.SqsHelper - Successfully created AWS-SQS and AWS-S3 connection - using config entries 'aws.sqs'.
+2023-08-02 12:40:36 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 12:40:36 [INFO] c.t.f.r.CloudStorageHelper$CryptoUtils - Created new SecureRandom.
+2023-08-02 12:40:36 [INFO] c.t.f.r.CloudStorageHelper - Initialized AES.
+2023-08-02 12:40:36 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 12:40:36 [WARN] g.GatewayGuiceModule - Creating PlayCookieSessionStore, using secret '111...'
+2023-08-02 12:40:36 [WARN] o.p.c.c.d.AnonymousClient - Be careful when using the 'AnonymousClient': an 'AnonymousProfile' is returned and the access is granted for the request.
+2023-08-02 12:40:37 [WARN] c.t.f.s.m.MatchingService - MatchingUtils is enabled: false BUT 'matching.query.api.url' is not a valid url. Will NOT use it. Url:  BUT 'matching.query.api.url' is NOT REACHABLE. Will NOT use it. Url: 
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - GatewayActor starting up
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,admin,dc-default' - 'MemberUp(Member(akka://application@api-admin:9104, Up))'
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'gateway,dc-default' - 'MemberUp(Member(akka://application@api-gateway:9102, Up))'
+2023-08-02 12:40:37 [WARN] c.t.fms.user.User - Embedding sync is NOT enabled. BUT 'matching.embedding.url' is not a valid url. Will NOT sync. Url:  BUT 'matching.embedding.url' is NOT REACHABLE. Will NOT sync. Url: 
+2023-08-02 12:40:37 [ERROR] g.a.a.MktPlaceUserImportActor - Unable to read CSV file with Category-Pool-Skills Mapping.. 
+java.nio.file.NoSuchFileException: /marketplaceUserImport/skillsPoolMapping.csv
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newInputStream(Unknown Source)
+	at gateway.akka.actors.MktPlaceUserImportActor.getSkillMappingFromIS(MktPlaceUserImportActor.java:524)
+	at gateway.akka.actors.MktPlaceUserImportActor.createReceive(MktPlaceUserImportActor.java:133)
+	at akka.actor.AbstractActor.receive(AbstractActor.scala:309)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:622)
+	at akka.actor.ActorCell.create(ActorCell.scala:643)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:514)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:536)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:295)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:230)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2023-08-02 12:40:37 [WARN] g.a.a.ClusterBackendActor - ClusterBackendActor starting up
+2023-08-02 12:40:37 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,admin,dc-default' - 'MemberUp(Member(akka://application@api-admin:9104, Up))'
+2023-08-02 12:40:37 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 12:40:37 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'gateway,dc-default' - 'MemberUp(Member(akka://application@api-gateway:9102, Up))'
+2023-08-02 12:40:37 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 12:40:37 [INFO] c.t.f.LiquibaseStartupHook - Running Liquibase ..
+2023-08-02 12:40:40 [INFO] c.t.f.LiquibaseStartupHook - Liquibase updated.
+2023-08-02 12:40:40 [INFO] c.t.f.LiquibaseStartupHook - .. Liquibase done.
+2023-08-02 12:40:40 [INFO] g.l.q.j.JobApplicationResultOutboundQueueListener - JobApplicationResultOutboundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.j.BeelineJobInboundQueueListener - BeelineJobInboundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.j.BeelineJobApplicationInboundQueueListener - BeelineJobApplicationInboundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.j.BeelineJobApplicationOutboundQueueListener - BeelineJobApplicationOutboundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.i.BeelineInterviewInboundQueueListener - BeelineInterviewInboundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.o.BeelineOfferInboundQueueListener - BeelineOfferInboundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.i.BeelineInterviewOfferApprovalOutBoundQueueListener - BeelineInterviewOfferApprovalOutBoundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.i.BeelineInterviewOfferApprovalResultOutBoundQueueListener - BeelineInterviewOfferApprovalResultOutBoundQueueListener Invoked
+2023-08-02 12:40:40 [INFO] g.l.q.j.SalesforceJobApplicationOutboundQueueListener - SalesforceJobApplicationOutboundQueueListener Invoked
+2023-08-02 12:40:40 [WARN] c.t.f.q.SqsHelper - SQS disabled: check config 'events.vms.beeline.enabled'
+2023-08-02 12:40:40 [WARN] c.t.f.q.SqsHelper - SQS disabled: check config 'events.vms.salesforce.enabled'
+2023-08-02 12:40:40 [INFO] p.c.s.AkkaHttpServer - Listening for HTTP on /0.0.0.0:9000
+2023-08-02 12:40:47 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 12:40:51 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:40:51 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:40:51 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:40:51 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:40:56 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,msp,dc-default' - 'MemberUp(Member(akka://application@api-msp:9101, Up))'
+2023-08-02 12:40:56 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,msp,dc-default' - 'MemberUp(Member(akka://application@api-msp:9101, Up))'
+2023-08-02 12:40:56 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 12:40:56 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 12:41:01 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:41:06 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 12:41:07 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-admin:9104' 
+2023-08-02 12:41:21 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:41:26 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-msp:9101' 
+2023-08-02 12:42:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:42:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:41:00.055Z and publish date after now Wed Aug 02 12:42:00 UTC 2023
+2023-08-02 12:42:58 [WARN] a.s.Materializer - [outbound connection to [akka://application@api-freelancer:9100], control stream] Upstream failed, cause: StreamTcpException: The connection closed with error: Connection reset by peer
+2023-08-02 12:43:01 [WARN] akka.cluster.Cluster - Cluster Node [akka://application@api-gateway:9102] - Marking node as UNREACHABLE [Member(akka://application@api-freelancer:9100, Up)].
+2023-08-02 12:43:24 [WARN] a.r.a.Association - Association to [akka://application@api-freelancer:9100] with UID [6724525461684557576] is irrecoverably failed. UID is now quarantined and all messages to this UID will be delivered to dead letters. Remote ActorSystem must be restarted to recover from this situation. Reason: Cluster member removed, previous status [Down]
+2023-08-02 12:45:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:45:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:44:00.002Z and publish date after now Wed Aug 02 12:45:00 UTC 2023
+2023-08-02 12:48:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:48:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:47:00.018Z and publish date after now Wed Aug 02 12:48:00 UTC 2023
+2023-08-02 12:51:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:51:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:50:00.002Z and publish date after now Wed Aug 02 12:51:00 UTC 2023
+2023-08-02 12:54:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:54:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:53:00.010Z and publish date after now Wed Aug 02 12:54:00 UTC 2023
+2023-08-02 12:57:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 12:57:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:56:00.001Z and publish date after now Wed Aug 02 12:57:00 UTC 2023
+2023-08-02 12:59:44 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:59:44 [WARN] g.a.a.ClusterBackendActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:59:44 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:59:44 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 12:59:54 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 13:00:00 [INFO] g.h.TextKernelExtractionHandler - Got extraction message: 'null' with size: 0. Calling textkernel ..
+2023-08-02 13:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Job Parsing ~~~~
+2023-08-02 13:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Parsing the Job title & Description ~~~~
+2023-08-02 13:00:00 [WARN] g.h.TextKernelExtractionHandler - Cron Execution...
+2023-08-02 13:00:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:00:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T12:59:00.034Z and publish date after now Wed Aug 02 13:00:00 UTC 2023
+2023-08-02 13:00:00 [WARN] c.z.h.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@885afbf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-08-02 13:00:00 [WARN] c.z.h.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6c7ab670 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-08-02 13:00:00 [WARN] g.h.TextKernelExtractionHandler - No jobs found to parse by text kernel job processing.
+2023-08-02 13:00:14 [INFO] g.a.a.ClusterBackendActor - Send backend registration ping to 'akka://application@api-freelancer:9100' 
+2023-08-02 13:03:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:03:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:02:00.001Z and publish date after now Wed Aug 02 13:03:00 UTC 2023
+2023-08-02 13:06:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:06:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:05:00.003Z and publish date after now Wed Aug 02 13:06:00 UTC 2023
+2023-08-02 13:09:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:09:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:08:00.001Z and publish date after now Wed Aug 02 13:09:00 UTC 2023
+2023-08-02 13:12:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:12:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:11:00.003Z and publish date after now Wed Aug 02 13:12:00 UTC 2023
+2023-08-02 13:12:00 [WARN] c.z.h.pool.PoolBase - HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51f65cdb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-08-02 13:15:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:15:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:14:00.001Z and publish date after now Wed Aug 02 13:15:00 UTC 2023
+2023-08-02 13:18:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:18:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:17:00.003Z and publish date after now Wed Aug 02 13:18:00 UTC 2023
+2023-08-02 13:21:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:21:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:20:00.001Z and publish date after now Wed Aug 02 13:21:00 UTC 2023
+2023-08-02 13:24:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:24:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:23:00.005Z and publish date after now Wed Aug 02 13:24:00 UTC 2023
+2023-08-02 13:27:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:27:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:26:00.002Z and publish date after now Wed Aug 02 13:27:00 UTC 2023
+2023-08-02 13:30:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:30:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:29:00.008Z and publish date after now Wed Aug 02 13:30:00 UTC 2023
+2023-08-02 13:33:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:33:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:32:00.001Z and publish date after now Wed Aug 02 13:33:00 UTC 2023
+2023-08-02 13:36:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:36:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:35:00.005Z and publish date after now Wed Aug 02 13:36:00 UTC 2023
+2023-08-02 13:39:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:39:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:38:00.002Z and publish date after now Wed Aug 02 13:39:00 UTC 2023
+2023-08-02 13:42:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:42:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:41:00.023Z and publish date after now Wed Aug 02 13:42:00 UTC 2023
+2023-08-02 13:45:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:45:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:44:00.002Z and publish date after now Wed Aug 02 13:45:00 UTC 2023
+2023-08-02 13:48:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:48:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:47:00.003Z and publish date after now Wed Aug 02 13:48:00 UTC 2023
+2023-08-02 13:51:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:51:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:50:00.001Z and publish date after now Wed Aug 02 13:51:00 UTC 2023
+2023-08-02 13:54:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:54:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:53:00.002Z and publish date after now Wed Aug 02 13:54:00 UTC 2023
+2023-08-02 13:57:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 13:57:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:56:00.002Z and publish date after now Wed Aug 02 13:57:00 UTC 2023
+2023-08-02 14:00:00 [WARN] g.a.a.l.GeoLookupActor - Unknown message dropped: GeoLookupActorMessage{message='geo-lookup-actor'}
+2023-08-02 14:00:00 [INFO] g.a.a.l.ClientFreelancerToPoolActor - <<Trying to add philips freelancers to Private Pool - Start>>
+2023-08-02 14:00:00 [INFO] g.h.TextKernelExtractionHandler - Got extraction message: 'null' with size: 0. Calling textkernel ..
+2023-08-02 14:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Job Parsing ~~~~
+2023-08-02 14:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Parsing the Job title & Description ~~~~
+2023-08-02 14:00:00 [WARN] g.h.TextKernelExtractionHandler - Cron Execution...
+2023-08-02 14:00:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:00:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T13:59:00.009Z and publish date after now Wed Aug 02 14:00:00 UTC 2023
+2023-08-02 14:00:00 [INFO] g.a.a.c.JobApplicationSendingFailedCronActor - <<Zero Job Applications in SF Status to be processed>>
+2023-08-02 14:00:00 [WARN] g.h.TextKernelExtractionHandler - No jobs found to parse by text kernel job processing.
+2023-08-02 14:00:00 [INFO] c.t.f.s.s.e.SearchService - reportUpdateChange on Pool id=26
+2023-08-02 14:00:00 [INFO] g.a.a.l.ClientFreelancerToPoolActor - << 0 philips freelancers added to Private Pool >>
+2023-08-02 14:00:00 [INFO] g.a.a.l.ClientFreelancerToPoolActor - <<Trying to add philips freelancers to Private Pool - End>>
+2023-08-02 14:03:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:03:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:02:00.001Z and publish date after now Wed Aug 02 14:03:00 UTC 2023
+2023-08-02 14:06:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:06:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:05:00.002Z and publish date after now Wed Aug 02 14:06:00 UTC 2023
+2023-08-02 14:09:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:09:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:08:00.001Z and publish date after now Wed Aug 02 14:09:00 UTC 2023
+2023-08-02 14:12:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:12:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:11:00.002Z and publish date after now Wed Aug 02 14:12:00 UTC 2023
+2023-08-02 14:15:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:15:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:14:00.001Z and publish date after now Wed Aug 02 14:15:00 UTC 2023
+2023-08-02 14:18:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:18:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:17:00.002Z and publish date after now Wed Aug 02 14:18:00 UTC 2023
+2023-08-02 14:21:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:21:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:20:00.001Z and publish date after now Wed Aug 02 14:21:00 UTC 2023
+2023-08-02 14:24:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:24:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:23:00.005Z and publish date after now Wed Aug 02 14:24:00 UTC 2023
+2023-08-02 14:27:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:27:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:26:00.002Z and publish date after now Wed Aug 02 14:27:00 UTC 2023
+2023-08-02 14:30:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:30:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:29:00.008Z and publish date after now Wed Aug 02 14:30:00 UTC 2023
+2023-08-02 14:33:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:33:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:32:00.002Z and publish date after now Wed Aug 02 14:33:00 UTC 2023
+2023-08-02 14:36:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:36:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:35:00.004Z and publish date after now Wed Aug 02 14:36:00 UTC 2023
+2023-08-02 14:39:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:39:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:38:00.002Z and publish date after now Wed Aug 02 14:39:00 UTC 2023
+2023-08-02 14:42:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:42:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:41:00.002Z and publish date after now Wed Aug 02 14:42:00 UTC 2023
+2023-08-02 14:45:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:45:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:44:00.001Z and publish date after now Wed Aug 02 14:45:00 UTC 2023
+2023-08-02 14:48:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:48:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:47:00.003Z and publish date after now Wed Aug 02 14:48:00 UTC 2023
+2023-08-02 14:51:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:51:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:50:00.001Z and publish date after now Wed Aug 02 14:51:00 UTC 2023
+2023-08-02 14:54:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:54:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:53:00.001Z and publish date after now Wed Aug 02 14:54:00 UTC 2023
+2023-08-02 14:57:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 14:57:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:56:00.002Z and publish date after now Wed Aug 02 14:57:00 UTC 2023
+2023-08-02 15:00:00 [INFO] g.h.TextKernelExtractionHandler - Got extraction message: 'null' with size: 0. Calling textkernel ..
+2023-08-02 15:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Job Parsing ~~~~
+2023-08-02 15:00:00 [WARN] g.h.TextKernelExtractionHandler -  ~~~~ Parsing the Job title & Description ~~~~
+2023-08-02 15:00:00 [WARN] g.h.TextKernelExtractionHandler - Cron Execution...
+2023-08-02 15:00:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 15:00:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T14:59:00.009Z and publish date after now Wed Aug 02 15:00:00 UTC 2023
+2023-08-02 15:00:00 [WARN] g.h.TextKernelExtractionHandler - No jobs found to parse by text kernel job processing.
+2023-08-02 15:03:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 15:03:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T15:02:00.001Z and publish date after now Wed Aug 02 15:03:00 UTC 2023
+2023-08-02 15:06:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 15:06:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T15:05:00.003Z and publish date after now Wed Aug 02 15:06:00 UTC 2023
+2023-08-02 15:09:00 [INFO] g.h.JobPublishHandler - This signal PublishJobMessage{message='publish_jobs'newJobStatus='OPEN', jobId=null, mspId=null}
+2023-08-02 15:09:00 [INFO] g.h.JobPublishHandler - Publishing job with status UP, creation date after 2023-08-02T15:08:00.001Z and publish date after now Wed Aug 02 15:09:00 UTC 2023

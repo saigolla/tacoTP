@@ -1,0 +1,358 @@
+2023-07-04 20:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-07-04 20:47 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 20:47 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 20:47 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 20:47 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 20:47 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 20:47 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 20:47 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 20:47 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 20:47 +00:00: 
+ ERROR  Request failed with status code 401
+
+  at createError (node_modules/axios/lib/core/createError.js:16:15)
+  at settle (node_modules/axios/lib/core/settle.js:17:12)
+  at Unzip.handleStreamEnd (node_modules/axios/lib/adapters/http.js:269:11)
+  at Unzip.emit (node:events:394:28)
+  at endReadableNT (node:internal/streams/readable:1329:12)
+  at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+2023-07-04 20:47 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 20:47 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 20:47 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 20:47 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 20:47 +00:00: 
+ ERROR  [POOLS FAILED]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  Cannot set headers after they are sent to the client
+
+  at new NodeError (node:internal/errors:363:5)
+  at ServerResponse.setHeader (node:_http_outgoing:574:11)
+  at setHeadersFromObject (node_modules/on-headers/index.js:94:16)
+  at ServerResponse.setWriteHeadHeaders (node_modules/on-headers/index.js:122:5)
+  at ServerResponse.writeHead (node_modules/on-headers/index.js:30:36)
+  at Object.next (.nuxt/server.js:51:0)
+  at app.context.redirect (.nuxt/utils.js:234:0)
+  at redirectToLogin (plugins/axios.js:35:0)
+  at handleError (node_modules/@twago/axios-intercept/index.js:32:0)
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async Store.getBreadcrumbs (store/publicSearch.js:14:0)
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  UNKNOWN ERROR IN API REQUEST Cannot set headers after they are sent to the client
+
+  at new NodeError (node:internal/errors:363:5)
+  at ServerResponse.setHeader (node:_http_outgoing:574:11)
+  at setHeadersFromObject (node_modules/on-headers/index.js:94:16)
+  at ServerResponse.setWriteHeadHeaders (node_modules/on-headers/index.js:122:5)
+  at ServerResponse.writeHead (node_modules/on-headers/index.js:30:36)
+  at Object.next (server.js:31484:18)
+  at app.context.redirect (server.js:22167:21)
+  at redirectToLogin (server.js:25542:5)
+  at handleError (server.js:25456:9)
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async Store.getHiddenFields (server.js:37547:11)
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  UNKNOWN ERROR IN API REQUEST Cannot set headers after they are sent to the client
+
+  at new NodeError (node:internal/errors:363:5)
+  at ServerResponse.setHeader (node:_http_outgoing:574:11)
+  at setHeadersFromObject (node_modules/on-headers/index.js:94:16)
+  at ServerResponse.setWriteHeadHeaders (node_modules/on-headers/index.js:122:5)
+  at ServerResponse.writeHead (node_modules/on-headers/index.js:30:36)
+  at Object.next (server.js:31484:18)
+  at app.context.redirect (server.js:22167:21)
+  at redirectToLogin (server.js:25542:5)
+  at handleError (server.js:25456:9)
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async Store.getPools (server.js:37839:11)
+
+2023-07-04 22:01 +00:00: 
+ ERROR  [POOLS FAILED]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  Request failed with status code 401
+
+  at createError (node_modules/axios/lib/core/createError.js:16:15)
+  at settle (node_modules/axios/lib/core/settle.js:17:12)
+  at Unzip.handleStreamEnd (node_modules/axios/lib/adapters/http.js:269:11)
+  at Unzip.emit (node:events:394:28)
+  at endReadableNT (node:internal/streams/readable:1329:12)
+  at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 22:01 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:01 +00:00: 
+ ERROR  [POOLS FAILED]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  UNKNOWN ERROR IN API REQUEST Cannot set headers after they are sent to the client
+
+  at new NodeError (node:internal/errors:363:5)
+  at ServerResponse.setHeader (node:_http_outgoing:574:11)
+  at setHeadersFromObject (node_modules/on-headers/index.js:94:16)
+  at ServerResponse.setWriteHeadHeaders (node_modules/on-headers/index.js:122:5)
+  at ServerResponse.writeHead (node_modules/on-headers/index.js:30:36)
+  at Object.next (server.js:31484:18)
+  at app.context.redirect (server.js:22167:21)
+  at redirectToLogin (server.js:25542:5)
+  at handleError (server.js:25456:9)
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async Store.getPools (server.js:37839:11)
+
+2023-07-04 22:02 +00:00: 
+ ERROR  [POOLS FAILED]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  UNKNOWN ERROR IN API REQUEST Cannot set headers after they are sent to the client
+
+  at new NodeError (node:internal/errors:363:5)
+  at ServerResponse.setHeader (node:_http_outgoing:574:11)
+  at setHeadersFromObject (node_modules/on-headers/index.js:94:16)
+  at ServerResponse.setWriteHeadHeaders (node_modules/on-headers/index.js:122:5)
+  at ServerResponse.writeHead (node_modules/on-headers/index.js:30:36)
+  at Object.next (server.js:31484:18)
+  at app.context.redirect (server.js:22167:21)
+  at redirectToLogin (server.js:25542:5)
+  at handleError (server.js:25456:9)
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async Store.getBreadcrumbs (server.js:20323:9)
+
+2023-07-04 22:02 +00:00: 
+ ERROR  Cannot set headers after they are sent to the client
+
+  at new NodeError (node:internal/errors:363:5)
+  at ServerResponse.setHeader (node:_http_outgoing:574:11)
+  at setHeadersFromObject (node_modules/on-headers/index.js:94:16)
+  at ServerResponse.setWriteHeadHeaders (node_modules/on-headers/index.js:122:5)
+  at ServerResponse.writeHead (node_modules/on-headers/index.js:30:36)
+  at Object.next (.nuxt/server.js:51:0)
+  at app.context.redirect (.nuxt/utils.js:234:0)
+  at redirectToLogin (plugins/axios.js:35:0)
+  at handleError (node_modules/@twago/axios-intercept/index.js:32:0)
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async Store.getBreadcrumbs (store/publicSearch.js:14:0)
+
+2023-07-04 22:02 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/breadcrumbs]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  Request failed with status code 401
+
+  at createError (node_modules/axios/lib/core/createError.js:16:15)
+  at settle (node_modules/axios/lib/core/settle.js:17:12)
+  at Unzip.handleStreamEnd (node_modules/axios/lib/adapters/http.js:269:11)
+  at Unzip.emit (node:events:394:28)
+  at endReadableNT (node:internal/streams/readable:1329:12)
+  at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[GET][401][/v1/api/freelancer/hiddenProfileFieldNames]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  CLIENT:  - API:[POST][401][/v1/api/search/pool/query]: Unauthorized
+
+2023-07-04 22:02 +00:00: 
+ ERROR  api.error.authentication.failure [33m0[39m [
+  [32m'api.error.authentication.failure'[39m
+]
+
+2023-07-04 22:02 +00:00: 
+ ERROR  [POOLS FAILED]
+

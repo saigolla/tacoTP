@@ -1,0 +1,5 @@
+update-alternatives 2023-07-04 20:48:31: run with --quiet --install /usr/bin/pager pager /bin/less 77 --slave /usr/share/man/man1/pager.1.gz pager.1.gz /usr/share/man/man1/less.1.gz
+update-alternatives 2023-07-04 20:48:31: link group pager updated to point to /bin/less
+update-alternatives 2023-07-04 20:48:31: run with --quiet --remove pager /usr/bin/less
+update-alternatives 2023-07-04 20:48:32: run with --quiet --install /usr/bin/pager pager /bin/less 77 --slave /usr/share/man/man1/pager.1.gz pager.1.gz /usr/share/man/man1/less.1.gz
+update-alternatives 2023-07-04 20:48:32: run with --quiet --remove pager /usr/bin/less

@@ -1,0 +1,397 @@
+##### 
+# expected env-variables:
+# - $MVN_VERSION ... to be used as version to select the right docker images (e.g. 1.22.51.5666-SNAPSHOT)
+# - $CONF_BASE ... to be used as base directory for the mapped volumes that contain config files
+# 
+# - start by pointing to an env-file: docker-compose --env-file .twago-env  up
+#####
+
+version: "3"
+services:
+    
+  ################################################
+  # service: API-ADMIN 
+  # Is the leader of the AKKA cluster, so other AKKA member 
+  # services, "depend" on this service to be up first  
+  ################################################
+  api-admin:
+    image: dockercmsrepo3.talent-pool.com/twago/talentpool-admin-api:${MVN_VERSION}
+    # the name "admin" is used by local config, as its also the hostname in the network !
+    container_name: api-admin
+    
+    healthcheck:       
+      test: ["CMD", "curl", "-f", "http://localhost:9000/api/buildInfo"]
+      interval: 5s
+      retries: 10
+      start_period: 10s
+      timeout: 10s
+
+    volumes:
+      - $CONF_BASE/api/admin/conf/application-local.conf:/opt/docker/conf/application-local.conf
+      - $CONF_BASE/api/admin/conf/logback.xml:/opt/docker/conf/logback.xml
+      - $CONF_BASE/api/admin/logs:/var/log/fms/admin
+
+    ports:
+     # BE Admin runs HTTP by WIKI doc on 9004
+     - "9004:9000"
+     # BE Admin runs AKKA by WIKI doc on 9104
+     - "9104:9104"
+     - "9104:9104/udp"
+         
+     
+    
+    command: 
+      -Dpidfile.path=/dev/null -Dplay.http.secret.key=11111111111111111111111111111123
+    
+    environment:
+      - JAVA_OPTS=-server -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/tmp
+    
+
+    restart: "no"
+    stdin_open: true
+    tty: true
+
+
+
+
+  ################################################
+  # service: API-GATEWAY 
+  ################################################
+  api-gateway:
+    image: dockercmsrepo3.talent-pool.com/twago/talentpool-gateway-api:${MVN_VERSION}
+    # the name "gateway" is used by local config, as its also the hostname in the network !
+    container_name: api-gateway
+    
+    healthcheck: 
+      test: ["CMD", "curl", "-f", "http://localhost:9000/buildInfo"]
+      interval: 5s
+      retries: 10
+      start_period: 10s
+      timeout: 10s
+
+    
+    # Admin is the root seed-node for the AKKA cluster, so admin needs to be up before
+    depends_on: 
+      api-admin:
+        condition: service_healthy        
+      
+    volumes:
+      - $CONF_BASE/api/gateway/conf/application-local.conf:/opt/docker/conf/application-local.conf
+      - $CONF_BASE/api/gateway/conf/logback.xml:/opt/docker/conf/logback.xml
+      - $CONF_BASE/api/gateway/logs:/var/log/fms/gateway
+    
+    ports:
+     # BE Gateway runs HTTP by WIKI doc on 9002
+     - "9002:9000"
+     # BE Gateway runs AKKA by WIKI doc on 9102
+     - "9102:9102"
+     - "9102:9102/udp"
+
+    command: 
+      -Dpidfile.path=/dev/null -Dplay.http.secret.key=11111111111111111111111111111124
+    
+    environment:
+      - JAVA_OPTS=-server -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/tmp
+    
+
+    restart: "no"
+    stdin_open: true
+    tty: true
+
+
+
+
+
+  ################################################
+  # service: API-FREELANCER 
+  ################################################
+#  api-freelancer:
+#    image: dockercmsrepo3.talent-pool.com/twago/talentpool-freelancer-api:${MVN_VERSION}
+#    # the name "freelancer" is used by local config, as its also the hostname in the network !
+#    container_name: api-freelancer
+#    
+#    healthcheck: 
+#      test: ["CMD", "curl", "-f", "http://localhost:9000/api/buildInfo"]
+#      interval: 5s
+#      retries: 10
+#      start_period: 20s
+#      timeout: 10s
+#  
+#    
+#    # Admin is the root seed-node for the AKKA cluster, so Admin needs to be up before
+#    # Gateway is the target/sink of most AKKA event, so should also be up up before
+#    depends_on: 
+#      api-admin:
+#        condition: service_healthy
+#      api-gateway:
+#        condition: service_healthy
+#      
+#    volumes:
+#      - $CONF_BASE/api/freelancer/conf/application-local.conf:/opt/docker/conf/application-local.conf
+#      - $CONF_BASE/api/freelancer/conf/logback.xml:/opt/docker/conf/logback.xml
+#      - $CONF_BASE/api/freelancer/logs:/var/log/fms/freelancer
+#    
+#    ports:
+#     # BE Freelancer runs HTTP by WIKI doc on 9000
+#     - "9000:9000"
+#     # BE Freelancer runs AKKA by WIKI doc on 9100
+#     - "9100:9100"
+#     - "9100:9100/udp"
+#
+#    command: 
+#      -Dpidfile.path=/dev/null -Dplay.http.secret.key=11111111111111111111111111111125
+#    
+#    environment:
+#      - JAVA_OPTS=-server -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/tmp
+#    
+#    
+#    restart: "no"
+#    stdin_open: true
+#    tty: true
+
+
+
+  ################################################
+  # service: API-MSP 
+  ################################################
+  api-msp:
+    image: dockercmsrepo3.talent-pool.com/twago/talentpool-msp-api:${MVN_VERSION}
+    # the name "msp" is used by local config, as its also the hostname in the network !
+    container_name: api-msp
+         
+    healthcheck: 
+      test: ["CMD", "curl", "-f", "http://localhost:9000/api/buildInfo"]
+      interval: 5s
+      retries: 10
+      start_period: 15s
+      timeout: 10s
+  
+    # Admin is the root seed-node for the AKKA cluster, so admin needs to be up before    
+    # Gateway is the target/sink of most AKKA event, so should also be up up before
+    depends_on:       
+      api-admin:
+        condition: service_healthy
+      api-gateway:
+        condition: service_healthy
+
+      
+    volumes:
+      - $CONF_BASE/api/msp/conf/application-local.conf:/opt/docker/conf/application-local.conf
+      - $CONF_BASE/api/msp/conf/logback.xml:/opt/docker/conf/logback.xml
+      - $CONF_BASE/api/msp/logs:/var/log/fms/msp
+    
+    ports:
+     # BE msp runs HTTP by WIKI doc on 9000
+     - "9001:9000"
+     # BE msp runs AKKA by WIKI doc on 9100
+     - "9101:9101"
+     - "9101:9101/udp"
+
+    command: 
+      -Dpidfile.path=/dev/null -Dplay.http.secret.key=11111111111111111111111111111126
+
+    environment:
+      - JAVA_OPTS=-server -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/tmp
+    
+
+    restart: "no"
+    stdin_open: true
+    tty: true
+
+
+
+
+#  ################################################
+#  # service: API-MATCHING 
+#  ################################################
+#  api-matching:
+#    image: dockercmsrepo3.talent-pool.com/twago/talentpool-matching-api:${MVN_VERSION}
+#    # the name "matching" is used by local config, as its also the hostname in the network !
+#    container_name: api-matching
+#      
+#    volumes:
+#      - $CONF_BASE/api/matching/conf/application-local.conf:/opt/docker/conf/application-local.conf
+#      - $CONF_BASE/api/matching/conf/logback.xml:/opt/docker/conf/logback.xml
+#      - $CONF_BASE/api/matching/logs:/var/log/fms/matching
+#      - $CONF_BASE/api/matching/conf/paragraph_embedding.vec.1.0.0-M2-patched:/opt/docker/conf/applicationparagraph_embedding.vec.1.0.0-M2-patched
+#      
+#    
+#    ports:
+#     # BE matching runs HTTP by WIKI doc on 9005
+#     - "9005:9000"
+#     
+#    command: 
+#      -Dpidfile.path=/dev/null -Dplay.http.secret.key=11111111111111111111111111111127
+#    
+#    environment:
+#      - JAVA_OPTS=-server -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/tmp
+#    
+#
+#    restart: "no"
+#    stdin_open: true
+#    tty: true
+    
+    
+    
+
+#  ################################################
+#  # service: API-GEO 
+#  ################################################
+#  api-geo:
+#    image: dockercmsrepo3.talent-pool.com/twago/talentpool-geo-api:${MVN_VERSION}
+#    # the name "geo" is used by local config, as its also the hostname in the network !
+#    container_name: api-geo
+#      
+#    volumes:
+#      - $CONF_BASE/api/geo/conf/application-local.conf:/opt/docker/conf/application-local.conf
+#      - $CONF_BASE/api/geo/conf/logback.xml:/opt/docker/conf/logback.xml
+#      - $CONF_BASE/api/geo/logs:/var/log/fms/geo      
+#      
+#    
+#    ports:
+#     # BE geo runs HTTP by WIKI doc on 9005
+#     - "9009:9000"
+#     
+#    command: 
+#      -Dpidfile.path=/dev/null -Dplay.http.secret.key=11111111111111111111111111111128
+#    
+#    environment:
+#      - JAVA_OPTS=-server -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/tmp
+#    
+#
+#    restart: "no"
+#    stdin_open: true
+#    tty: true
+#
+
+
+
+  ################################################
+  ################################################
+  # UI-SERVICES 
+  ################################################
+  ################################################
+
+
+
+
+  ################################################
+  # service: UI-MSP 
+  ################################################
+  ui-msp:
+    image: dockercmsrepo3.talent-pool.com/twago/talentpool-msp-ui:${MVN_VERSION}    
+    container_name: ui-msp
+      
+    depends_on:       
+      api-msp:
+        condition: service_healthy
+            
+    volumes:
+      - $CONF_BASE/ui/msp/ecosystem.config.js:/app/ecosystem.config.js 
+      - $CONF_BASE/ui/msp/logs:/var/log
+         
+    ports:
+     # FE msp runs HTTP by WIKI doc on 3001
+     - "3001:3000"
+     
+     
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=3000
+      - REST_API_URL=http://api-msp:9000
+      - PROJECT_POST_URL=http://api-gateway:9000
+      - PROJECT_POST_PWD=${SECRET_PROJECT_POST_PWD}
+      - APP_ENVIRONMENT=DOCKER
+      - IPSTACK_KEY=${SECRET_IPSTACK_KEY}
+      - GEO_API_URL=api-geo:9000
+      - LOCALIZATION_URL=https://localization.talent-pool.com/graphql
+      - LOCALIZATION_TOKEN=${SECRET_LOCALIZATION_TOKEN}
+      - PH_ENV=docker
+      - PH_APP_ID=${SECRET_PH_APP_ID}
+      - PH_REGION=ap-southeast-2
+    
+         
+    restart: "no"
+    stdin_open: true
+    tty: true
+
+
+
+  ################################################
+  # service: UI-ADMIN 
+  ################################################
+  ui-admin:
+    image: dockercmsrepo3.talent-pool.com/twago/talentpool-admin-ui:${MVN_VERSION}    
+    container_name: ui-admin
+      
+    depends_on:       
+      api-admin:
+        condition: service_healthy
+            
+    volumes:
+      - $CONF_BASE/ui/admin/ecosystem.config.js:/app/ecosystem.config.js 
+      - $CONF_BASE/ui/admin/logs:/var/log
+         
+    ports:
+     # FE admin runs HTTP by WIKI doc on 3004
+     - "3004:3000"     
+     
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=3000
+      - REST_API_URL=http://api-admin:9000
+      - PROJECT_POST_URL=http://api-gateway:9000
+      - PROJECT_POST_PWD=${SECRET_PROJECT_POST_PWD}
+      - APP_ENVIRONMENT=DOCKER     
+      - LOCALIZATION_URL=https://localization.talent-pool.com/graphql
+      - LOCALIZATION_TOKEN=${SECRET_LOCALIZATION_TOKEN}    
+         
+    restart: "no"
+    stdin_open: true
+    tty: true
+
+
+
+  ################################################
+  # service: UI-FREELANCER 
+  ################################################
+  ui-freelancer:
+    image: dockercmsrepo3.talent-pool.com/twago/talentpool-freelancer-ui:${MVN_VERSION}    
+    container_name: ui-freelancer
+      
+#    depends_on:       
+#      api-freelancer:
+#        condition: service_healthy
+            
+    volumes:
+      - $CONF_BASE/ui/freelancer/ecosystem.config.js:/app/ecosystem.config.js 
+      - $CONF_BASE/ui/freelancer/logs:/var/log
+         
+    ports:
+     # FE freelancer runs HTTP by WIKI doc on 3000
+     - "3000:3000"     
+     
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=3000
+      # - REST_API_URL=http://api-freelancer:9000
+      - REST_API_URL=http://host.docker.internal:9000
+      - PROJECT_POST_URL=http://api-gateway:9000
+      - PROJECT_POST_PWD=${SECRET_PROJECT_POST_PWD}
+      - APP_ENVIRONMENT=DOCKER   
+      - PH_ENV=docker
+      - PH_APP_ID=${SECRET_PH_APP_ID}
+      - PH_REGION=ap-southeast-2  
+      - IPSTACK_KEY=${SECRET_IPSTACK_KEY}      
+      - LOCALIZATION_URL=https://localization.talent-pool.com/graphql
+      - LOCALIZATION_TOKEN=${SECRET_LOCALIZATION_TOKEN}    
+         
+    restart: "no"
+    stdin_open: true
+    tty: true
+
+
+    

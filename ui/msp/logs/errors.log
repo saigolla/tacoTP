@@ -1,0 +1,1974 @@
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ModuleContainer.ready (/app/node_modules/@nuxt/core/dist/core.js:36:5)
+    at async Nuxt._init (/app/node_modules/@nuxt/core/dist/core.js:342:5)
+2023-06-07 08:07 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+  at async ModuleContainer.ready (node_modules/@nuxt/core/dist/core.js:36:5)
+  at async Nuxt._init (node_modules/@nuxt/core/dist/core.js:342:5)
+
+2023-06-07 08:08 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:08 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:09 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:09 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 08:18 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 08:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:19 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 08:29 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 08:30 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:31 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:31 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:41 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:41 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:49 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:49 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 08:52 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 08:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:53 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 08:56 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 08:56 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 08:56 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:04 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:04 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:06 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:06 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:06 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:06 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:08 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:08 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:08 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:08 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:08 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:08 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:08 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:08 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:08 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:15 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:15 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:15 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:15 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:15 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:17 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:18 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:18 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:18 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:18 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:19 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:19 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:19 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:19 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:19 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:19 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:19 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:19 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:20 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:20 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:20 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:20 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:20 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:20 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:20 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:20 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:20 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:20 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:20 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:23 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:23 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:23 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:26 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 09:26 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:26 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:26 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:26 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:26 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:26 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:26 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:26 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:38 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:38 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:39 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:39 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 09:39 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 09:39 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 09:51 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 10:08 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 10:30 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 10:32 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 10:35 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 10:40 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 10:42 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:42 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 10:46 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 10:46 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:46 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 10:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 10:47 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 11:09 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 11:11 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 11:22 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 11:22 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 11:22 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 11:22 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 11:25 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 11:26 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 11:36 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+    at Object.createConfig (/app/node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+    at new HttpProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+    at Object.createProxyMiddleware (/app/node_modules/http-proxy-middleware/dist/index.js:16:28)
+    at ModuleContainer.proxyModule (/app/node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at ModuleContainer.requireModule (/app/node_modules/@nuxt/core/dist/core.js:100:17)
+    at ModuleContainer.axiosModule (/app/node_modules/@nuxtjs/axios/lib/module.js:141:10)
+    at ModuleContainer.addModule (/app/node_modules/@nuxt/core/dist/core.js:167:34)
+    at /app/node_modules/@nuxt/utils/dist/utils.js:490:43
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-06-07 12:24 +00:00: 
+ ERROR  [HPM] Missing "target" option. Example: {target: "http://www.example.org"}
+
+  at Object.createConfig (node_modules/http-proxy-middleware/dist/config-factory.js:38:15)
+  at new HttpProxyMiddleware (node_modules/http-proxy-middleware/dist/http-proxy-middleware.js:147:40)
+  at Object.createProxyMiddleware (node_modules/http-proxy-middleware/dist/index.js:16:28)
+  at ModuleContainer.proxyModule (node_modules/@nuxtjs/proxy/dist/index.js:51:36)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at ModuleContainer.requireModule (node_modules/@nuxt/core/dist/core.js:100:17)
+  at ModuleContainer.axiosModule (node_modules/@nuxtjs/axios/lib/module.js:141:10)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:167:34)
+  at node_modules/@nuxt/utils/dist/utils.js:490:43
+  at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2023-06-07 12:25 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Invalid URL
+
+2023-06-07 12:25 +00:00: 
+ ERROR  Invalid URL
+
+  at new NodeError (node:internal/errors:363:5)
+  at onParseError (node:internal/url:536:9)
+  at new URL (node:internal/url:612:5)
+  at forwardModel (node_modules/@twago/configs/src/domain.js:48:0)
+  at plugins_axios (plugins/axios.js:5:0)
+  at createApp (.nuxt/index.js:271:0)
+  at async module.exports.__webpack_exports__.default (.nuxt/server.js:84:0)
+
+2023-06-07 12:37 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:39 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:40 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:40 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:40 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:41 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:41 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:49 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:49 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:50 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:50 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 12:53 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:00 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:00 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:04 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:04 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:05 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:06 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:06 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:13 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:14 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:14 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:15 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:21 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 13:21 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 14:45 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 14:46 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 14:46 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 14:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 14:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+
+2023-06-07 14:47 +00:00: 
+ ERROR  [@nuxtjs/i18n] Failed loading async locale export: Request failed with status code 400
+

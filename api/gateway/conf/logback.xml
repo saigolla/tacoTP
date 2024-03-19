@@ -1,0 +1,114 @@
+<!-- https://www.playframework.com/documentation/latest/SettingsLogger -->
+<configuration>
+
+    <conversionRule conversionWord="coloredLevel" converterClass="play.api.libs.logback.ColoredLevel"/>
+
+    <!-- inspired by https://www.playframework.com/documentation/2.5.x/SettingsLogger -->
+    <!-- Disable .. we do rolling logfiles via native logrotate -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/var/log/fms/gateway/application.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rollover with compression -->
+            <fileNamePattern>/var/log/fms/gateway/application-log-%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <!-- keep 30 days worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder immediateFlush="false">
+            <!-- http://logback.qos.ch/manual/layouts.html#conversionWord -->
+            <pattern>%date{yyyy-MM-dd HH:mm:ss} [%level] %logger{20} - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+
+    <!-- CrossEngage Errors log file, by using the filter we catch only the errors we want on that file -->
+    <appender name="XENGAGE_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="ch.qos.logback.classic.boolex.OnMarkerEvaluator">
+                <marker>XENGAGE_USR_MGR</marker>
+            </evaluator>
+            <OnMismatch>DENY</OnMismatch>
+            <OnMatch>ACCEPT</OnMatch>
+        </filter>
+        <file>/var/log/fms/gateway/CrossEngageUsrMgmtErrors.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rollover with compression -->
+            <fileNamePattern>/var/log/fms/gateway/CrossEngageUsrMgmtErrors-log-%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <!-- keep 90 days worth of history -->
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>
+        <encoder immediateFlush="false">
+            <pattern>%date [%level] %logger{15} - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder>
+         <pattern>%date{yyyy-MM-dd HH:mm:ss} [%level] %logger{20} - %message%n%xException</pattern>
+      </encoder>
+    </appender>
+
+
+    <appender name="ASYNCFILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE"/>
+    </appender>
+
+    <appender name="ASYNCSTDOUT" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT" />
+    </appender>
+
+
+    <appender name="ACCESS_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/var/log/fms/gateway/access.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover with compression -->
+            <fileNamePattern>access-log-%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <!-- keep 1 week worth of history -->
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder immediateFlush="false">
+            <pattern>%date{yyyy-MM-dd HH:mm:ss ZZZZ} %message%n</pattern>                      
+        </encoder>
+    </appender>
+
+    <appender name="FREELANCER_SIEM_FILE" class="ch.qos.logback.core.FileAppender">
+       
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="ch.qos.logback.classic.boolex.OnMarkerEvaluator">
+                <marker>FREELANCER_SIEM</marker>
+            </evaluator>
+            <OnMismatch>DENY</OnMismatch>
+            <OnMatch>ACCEPT</OnMatch>
+        </filter>
+         <file>/var/log/fms/gateway/siem.log</file>  
+        <encoder immediateFlush="false">
+            <pattern>%date{yyyy-MM-dd HH:mm:ss}, create_time=%date{MM-dd-yyyy HH:mm:ss}, %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="play" level="WARN"/>
+	<logger name="play.core.server.AkkaHttpServer" level="INFO"/>
+    <logger name="application" level="INFO"/>
+	<logger name="play.shaded.ahc.io.netty" level="WARN"/>
+
+    <logger name="com.twago.fms" level="INFO"/>
+    <logger name="gateway" level="INFO"/>
+    <logger name="gateway.handler" level="INFO"/>
+    <logger name="controllers" level="INFO"/>
+
+    <!-- Off these ones as they are annoying, and anyway we manage configuration ourselves -->
+    <logger name="com.twago.fms.search.service.es.IndexService" level="WARN"/>
+
+    <logger name="access" level="INFO" additivity="false">
+        <appender-ref ref="ASYNCFILE" />
+        <appender-ref ref="ASYNCSTDOUT" />
+    </logger>
+
+    <root level="WARN">
+        <appender-ref ref="ASYNCFILE"/>
+        <appender-ref ref="ASYNCSTDOUT"/>
+        <appender-ref ref="XENGAGE_FILE"/>
+        <appender-ref ref="FREELANCER_SIEM_FILE"/>
+    </root>
+
+
+</configuration>

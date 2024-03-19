@@ -1,0 +1,81 @@
+2023-08-02 11:50:55 [WARN] c.t.f.BusinessGuiceModule - Running java version:11.0.19
+2023-08-02 11:51:00 [WARN] c.t.f.r.CloudStorageHelper - Did not find (EFS) file system root - config entries 'resource.cloudStorage.efs.rootDir' missing. Will use DB binary storage.
+2023-08-02 11:51:02 [WARN] c.t.f.r.VirusChecker - Virus scanning is NOT enabled. BUT 'clamAv.url' is NOT REACHABLE. Will NOT scan. Url: https://antivirus.twago.net/scan
+2023-08-02 11:51:02 [WARN] c.t.f.q.SqsHelper - Using InstanceProfileCredentialsProvider.
+2023-08-02 11:51:02 [WARN] c.t.f.q.SqsHelper - Successfully created AWS-SQS and AWS-S3 connection - using config entries 'aws.sqs'.
+2023-08-02 11:51:02 [WARN] a.AdminGuiceModule - Creating PlayCookieSessionStore, using secret 111 ...
+2023-08-02 11:51:02 [WARN] o.p.c.c.d.AnonymousClient - Be careful when using the 'AnonymousClient': an 'AnonymousProfile' is returned and the access is granted for the request.
+2023-08-02 11:51:03 [WARN] c.t.f.s.a.GatewayActor - GatewayActor starting up
+2023-08-02 11:51:03 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,admin,dc-default' - 'MemberUp(Member(akka://application@api-admin:9104, Up))'
+2023-08-02 11:51:04 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 11:51:04 [INFO] c.t.f.r.CloudStorageHelper$CryptoUtils - Created new SecureRandom.
+2023-08-02 11:51:04 [INFO] c.t.f.r.CloudStorageHelper - Initialized AES.
+2023-08-02 11:51:04 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 11:51:04 [INFO] c.t.f.LiquibaseStartupHook - Running Liquibase ..
+2023-08-02 11:51:07 [INFO] c.t.f.LiquibaseStartupHook - Liquibase updated.
+2023-08-02 11:51:07 [INFO] c.t.f.LiquibaseStartupHook - .. Liquibase done.
+2023-08-02 11:51:12 [WARN] c.t.f.s.m.MatchingService - MatchingUtils is enabled: true BUT 'matching.query.api.url' is NOT REACHABLE. Will NOT use it. Url: http://api-matching:9005
+2023-08-02 11:51:13 [INFO] p.c.s.AkkaHttpServer - Listening for HTTP on /0.0.0.0:9000
+2023-08-02 11:51:28 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'gateway,dc-default' - 'MemberUp(Member(akka://application@api-gateway:9102, Up))'
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend - added Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]' 
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]
+2023-08-02 11:51:31 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]' 
+2023-08-02 11:51:41 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]
+2023-08-02 11:51:41 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]' 
+2023-08-02 11:51:49 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 11:51:53 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,msp,dc-default' - 'MemberUp(Member(akka://application@api-msp:9101, Up))'
+2023-08-02 11:52:01 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]
+2023-08-02 11:52:01 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]' 
+2023-08-02 11:53:58 [WARN] akka.cluster.Cluster - Cluster Node [akka://application@api-admin:9104] - Marking node as UNREACHABLE [Member(akka://application@api-freelancer:9100, Up)].
+2023-08-02 11:54:10 [WARN] a.r.a.Association - Outbound message stream to [akka://application@api-freelancer:9100] failed. Restarting it. akka.stream.StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 11:54:17 [WARN] a.s.Materializer - [outbound connection to [akka://application@api-freelancer:9100], message stream] Upstream failed, cause: StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 11:54:19 [WARN] a.c.s.SplitBrainResolver - SBR took decision DownUnreachable and is downing [akka://application@api-freelancer:9100], [1] unreachable of [4] members, all members in DC [Member(akka://application@api-admin:9104, Up), Member(akka://application@api-freelancer:9100, Up), Member(akka://application@api-gateway:9102, Up), Member(akka://application@api-msp:9101, Up)], full reachability status: [akka://application@api-admin:9104 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (1), akka://application@api-gateway:9102 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (1), akka://application@api-msp:9101 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (1)]
+2023-08-02 11:54:21 [WARN] a.r.a.Association - Association to [akka://application@api-freelancer:9100] with UID [-6824711786489535628] is irrecoverably failed. UID is now quarantined and all messages to this UID will be delivered to dead letters. Remote ActorSystem must be restarted to recover from this situation. Reason: Cluster member removed, previous status [Down]
+2023-08-02 12:21:39 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:23:42 [WARN] a.s.Materializer - [outbound connection to [akka://application@api-freelancer:9100], control stream] Upstream failed, cause: StreamTcpException: The connection closed with error: Connection reset by peer
+2023-08-02 12:23:46 [WARN] akka.cluster.Cluster - Cluster Node [akka://application@api-admin:9104] - Marking node as UNREACHABLE [Member(akka://application@api-freelancer:9100, Up)].
+2023-08-02 12:23:58 [WARN] a.r.a.Association - Outbound message stream to [akka://application@api-freelancer:9100] failed. Restarting it. akka.stream.StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 12:24:07 [WARN] a.c.s.SplitBrainResolver - SBR took decision DownUnreachable and is downing [akka://application@api-freelancer:9100], [1] unreachable of [4] members, all members in DC [Member(akka://application@api-admin:9104, Up), Member(akka://application@api-freelancer:9100, Up), Member(akka://application@api-gateway:9102, Up), Member(akka://application@api-msp:9101, Up)], full reachability status: [akka://application@api-admin:9104 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (2), akka://application@api-gateway:9102 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (2), akka://application@api-msp:9101 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (2)]
+2023-08-02 12:24:08 [WARN] a.s.Materializer - [outbound connection to [akka://application@api-freelancer:9100], message stream] Upstream failed, cause: StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of akka.io.TcpOutgoingConnection$$anon$2: Connect timeout of Some(5000 milliseconds) expired
+2023-08-02 12:24:08 [WARN] a.r.a.Association - Association to [akka://application@api-freelancer:9100] with UID [-5156625462129854807] is irrecoverably failed. UID is now quarantined and all messages to this UID will be delivered to dead letters. Remote ActorSystem must be restarted to recover from this situation. Reason: Cluster member removed, previous status [Down]
+2023-08-02 12:38:43 [WARN] c.t.f.s.a.GatewayActor - Existing gateway-backend terminated: 'Actor[akka://application@api-gateway:9102/user/backend-actor#-1420222178]'
+2023-08-02 12:38:48 [INFO] p.c.s.AkkaHttpServer - Stopping Akka HTTP server...
+2023-08-02 12:38:48 [INFO] p.c.s.AkkaHttpServer - Terminating server binding for /0.0.0.0:9000
+2023-08-02 12:38:48 [INFO] p.c.s.AkkaHttpServer - Running provided shutdown stop hooks
+2023-08-02 12:40:02 [WARN] c.t.f.BusinessGuiceModule - Running java version:11.0.19
+2023-08-02 12:40:06 [WARN] c.t.f.r.CloudStorageHelper - Did not find (EFS) file system root - config entries 'resource.cloudStorage.efs.rootDir' missing. Will use DB binary storage.
+2023-08-02 12:40:08 [WARN] c.t.f.r.VirusChecker - Virus scanning is NOT enabled. BUT 'clamAv.url' is NOT REACHABLE. Will NOT scan. Url: https://antivirus.twago.net/scan
+2023-08-02 12:40:08 [WARN] c.t.f.q.SqsHelper - Using InstanceProfileCredentialsProvider.
+2023-08-02 12:40:09 [WARN] c.t.f.q.SqsHelper - Successfully created AWS-SQS and AWS-S3 connection - using config entries 'aws.sqs'.
+2023-08-02 12:40:09 [WARN] a.AdminGuiceModule - Creating PlayCookieSessionStore, using secret 111 ...
+2023-08-02 12:40:09 [WARN] o.p.c.c.d.AnonymousClient - Be careful when using the 'AnonymousClient': an 'AnonymousProfile' is returned and the access is granted for the request.
+2023-08-02 12:40:09 [WARN] c.t.f.s.a.GatewayActor - GatewayActor starting up
+2023-08-02 12:40:09 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,admin,dc-default' - 'MemberUp(Member(akka://application@api-admin:9104, Up))'
+2023-08-02 12:40:10 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 12:40:10 [INFO] c.t.f.r.CloudStorageHelper$CryptoUtils - Created new SecureRandom.
+2023-08-02 12:40:10 [INFO] c.t.f.r.CloudStorageHelper - Initialized AES.
+2023-08-02 12:40:10 [INFO] c.t.f.EBeanServerConfigStartup - onStart
+2023-08-02 12:40:10 [INFO] c.t.f.LiquibaseStartupHook - Running Liquibase ..
+2023-08-02 12:40:13 [INFO] c.t.f.LiquibaseStartupHook - Liquibase updated.
+2023-08-02 12:40:13 [INFO] c.t.f.LiquibaseStartupHook - .. Liquibase done.
+2023-08-02 12:40:21 [WARN] c.t.f.s.m.MatchingService - MatchingUtils is enabled: true BUT 'matching.query.api.url' is NOT REACHABLE. Will NOT use it. Url: http://api-matching:9005
+2023-08-02 12:40:21 [INFO] p.c.s.AkkaHttpServer - Listening for HTTP on /0.0.0.0:9000
+2023-08-02 12:40:33 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'gateway,dc-default' - 'MemberUp(Member(akka://application@api-gateway:9102, Up))'
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend - added Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]' 
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]
+2023-08-02 12:40:37 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]' 
+2023-08-02 12:40:47 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]
+2023-08-02 12:40:47 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]' 
+2023-08-02 12:40:51 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'
+2023-08-02 12:40:55 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,msp,dc-default' - 'MemberUp(Member(akka://application@api-msp:9101, Up))'
+2023-08-02 12:41:07 [WARN] c.t.f.s.a.GatewayActor - addKnownBackend, list: Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]
+2023-08-02 12:41:07 [WARN] c.t.f.s.a.GatewayActor - New gateway-backend registered: 'Actor[akka://application@api-gateway:9102/user/backend-actor#7819343]' 
+2023-08-02 12:43:02 [WARN] akka.cluster.Cluster - Cluster Node [akka://application@api-admin:9104] - Marking node as UNREACHABLE [Member(akka://application@api-freelancer:9100, Up)].
+2023-08-02 12:43:14 [WARN] a.r.a.Association - Outbound message stream to [akka://application@api-freelancer:9100] failed. Restarting it. akka.stream.StreamTcpException: Tcp command [Connect(api-freelancer:9100,None,List(),Some(5000 milliseconds),true)] failed because of java.net.UnknownHostException: api-freelancer
+2023-08-02 12:43:22 [WARN] a.c.s.SplitBrainResolver - SBR took decision DownUnreachable and is downing [akka://application@api-freelancer:9100], [1] unreachable of [4] members, all members in DC [Member(akka://application@api-admin:9104, Up), Member(akka://application@api-freelancer:9100, Up), Member(akka://application@api-gateway:9102, Up), Member(akka://application@api-msp:9101, Up)], full reachability status: [akka://application@api-admin:9104 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (1), akka://application@api-gateway:9102 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (1), akka://application@api-msp:9101 -> akka://application@api-freelancer:9100: Unreachable [Unreachable] (1)]
+2023-08-02 12:43:24 [WARN] a.r.a.Association - Association to [akka://application@api-freelancer:9100] with UID [6724525461684557576] is irrecoverably failed. UID is now quarantined and all messages to this UID will be delivered to dead letters. Remote ActorSystem must be restarted to recover from this situation. Reason: Cluster member removed, previous status [Down]
+2023-08-02 12:59:43 [WARN] c.t.f.s.a.GatewayActor - MemberUp, role 'frontend,freelancer,dc-default' - 'MemberUp(Member(akka://application@api-freelancer:9100, Up))'

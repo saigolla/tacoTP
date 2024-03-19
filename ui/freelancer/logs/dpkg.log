@@ -1,0 +1,13 @@
+2023-07-04 20:48:29 startup archives unpack
+2023-07-04 20:48:31 install less:amd64 <none> 487-0.1+b1
+2023-07-04 20:48:31 status half-installed less:amd64 487-0.1+b1
+2023-07-04 20:48:31 status triggers-pending mime-support:all 3.62
+2023-07-04 20:48:31 status unpacked less:amd64 487-0.1+b1
+2023-07-04 20:48:31 startup packages configure
+2023-07-04 20:48:31 configure less:amd64 487-0.1+b1 <none>
+2023-07-04 20:48:31 status unpacked less:amd64 487-0.1+b1
+2023-07-04 20:48:31 status half-configured less:amd64 487-0.1+b1
+2023-07-04 20:48:32 status installed less:amd64 487-0.1+b1
+2023-07-04 20:48:32 trigproc mime-support:all 3.62 <none>
+2023-07-04 20:48:32 status half-configured mime-support:all 3.62
+2023-07-04 20:48:32 status installed mime-support:all 3.62
